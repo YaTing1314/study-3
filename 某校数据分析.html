@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>某校数据分析</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(78, 71, 71);
+        }
+        *{
+            border: 5px solid black;
+            
+        }
+        .flex{
+            display: flex;
+        }
+        .baise{
+            background-color: white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+  </head>
+ 
+<body  class="flex1 column">
+    <!-- 顶部栏 -->
+    <div class="baise" style="flex: 1 ;height: 100px;">
+    <p style=" border: 0px;text-align: center;font-size: 30px;">某校数据中心</p></div>
+    <!-- 展示栏 -->
+    <div class="flex1 flex"  >
+      <!-- 左侧栏 -->
+      <div class="flex1 flex column " style="flex: 30% ;height: 600px;" >
+         <!-- 实时动态 -->
+         <div style="flex: 1" class="baise"></div>
+         <!-- 宿舍管理 -->
+         <div style="flex: 2;" class="baise"></div>
+         </div>
+      <!-- 中间栏 -->
+      <div class="flex1 flex column " style="flex: 30%">
+        <!-- 基础信息 -->
+        <div style="flex: 1;border-width: 0px;" class="baise flex1 flex">
+          <div style="flex: 35%"></div>
+          <div style="flex: 65%" class="flex1 flex column">
+             <div style="flex: 1"></div>
+             <div style="flex: 1"></div>
+          </div>
+        </div>
+        <!-- 每周之星 -->
+        <div style="flex: 1;" class="baise"></div>
+        <!-- 六个一 -->
+        <div style="flex: 1;border-width: 0px;" class="baise flex1 flex ">
+          <div style="flex: 2"></div>
+          <div style="flex: 1"></div>
+        </div>
+    </div>
+      <!-- 右侧栏 -->
+      <div class="flex1 flex column " style="flex: 30%">
+        <!-- 奖惩情况 -->
+        <div style="flex: 1;border-width: 0px;" class="baise flex1 flex">
+          <div style="flex: 1"></div>
+          <div style="flex: 1"></div>
+        </div>
+        <!-- 工作情况 -->
+        <div style="flex: 1;" class="baise"></div>
+        <!-- 预警中心 -->
+        <div style="flex: 1;" class="baise"></div>
+    </div>
+    </div>
+</body>
+</html>
