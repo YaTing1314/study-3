@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笔记</title>
+    <style type="text/css">
+        body{
+            background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.yipic.cn%2Fthumb%2Fcd6f4d06%2Fcb12b3f5%2Fcba4c288%2Fc4e319f9%2Fbig_cd6f4d06cb12b3f5cba4c288c4e319f9.jpg%3Fx-oss-process%3Dimage%2Fformat%2Cwebp%2Fsharpen%2C100&refer=http%3A%2F%2Fimg.yipic.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1668971650&t=7541147ea569ad779a4a8121aafeb44e);
+            background-repeat:no-repeat;background-attachment: fixed;
+            background-size: 100%;
+          
+        }
+    </style>
+    <script>
+        var i = 0;
+        function mydate(){
+            var now=new Date();
+            var year=now.getFullYear();
+            var month=now.getMonth()+1;
+            var day=now.getDate();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();
+            var seconds=now.getSeconds();
+            document.getElementById('div').innerHTML=year+"年"+month+"月"+day+"日"+hours+":"+minutes+":"+seconds
+        }
+        setInterval(mydate,1000);
+    </script>
+</head>
+<body >
+   <h1 style="color: aliceblue;">每日一记</h1>
+   <div style="color: rgb(202, 29, 173);" id="div"></div>
+ <form action="demo-form.php" style="color: white;">
+    心情: <input type="text" name="FirstName" ><br>
+    内容: <input type="text" name="LastName" ><br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
